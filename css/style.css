@@ -158,3 +158,13 @@ header{
     font-size: 18px;
     text-align: center;
 }
+.panel-control{
+    margin-bottom: 20px;
+}
+.panel-control-titulo{
+    color: white;
+    margin-bottom: 8px;
+    width: 100%;
+    font-size: 12px;
+    margin-top: 0;
+}
