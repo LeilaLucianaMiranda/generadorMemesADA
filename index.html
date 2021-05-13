@@ -4,49 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
+     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/dac9c574a1.js" crossorigin="anonymous"></script>
+
 </head>
 <body class="tema">
+    <!-- FALTA PONER ID-->
   <div class="editor-container">
         <header>
-            <h1 class="tittle-generator">GENERADOR DE MEMES</h1>
-            <div class="panel-botones">
-                <button class="boton boton-imagen">
-                     <i class="" aria-hidden="true"></i>imagen
+            <h1 class="tittle-principal">GENERADOR DE MEMES</h1>
+            <div class="contenedor-boton panel-botones">
+                <button class="boton boton-texto">
+                     <i class="far fa-file-image boton-icono" aria-hidden="true"></i>imagen
                 </button>
                 <button class="boton boton-texto">
-                    <i class="" aria-hidden="true"></i>Texto
+                    <i class="fas fa-font boton-icono" aria-hidden="true"></i>Texto
                </button>
                <button class="boton boton-modooscuro">
-                <i class="" aria-label="cambiar modo oscuro"></i>Modo oscuro
+                <i class="fas fa-lightbulb boton-icono" aria-label="cambiar modo oscuro"></i>Modo oscuro
                 </button>
-                <button class="boton boton-modooscuro">
-                    <i class="" aria-label="cambiar modo claro"></i>Modo oscuro
+                <button class="boton boton-modoclaro">
+                    <i class="fas fa-lightbulb boton-icono" aria-label="cambiar modo claro"></i>Modo claro
                 </button>
             </div>
         </header>
-
-        <div class="editor container">
-            <main class="meme-container">
-              <div>
-                <p>Top text</p>
-                <div> </div>
-                  <p>
+ <!-- CONTENEDOR PARA EDITAR EL MEME, MAIN-->
+        <div class="editor contenedor">
+            <main class="contenedor-meme">
+              <div class= "canvas-meme">
+                <p class= "texto-meme">Top text</p>
+                  <div class="imagen-meme"> </div> <!-- preguntar que hay que poner -->
+                  <p class="texto-meme">
                     Botton text
                   </p>
               </div>
-              <button>
-                <i class="" aria hidden="true"></i> Descargar meme
+               <button type="button" class="boton boton-texto" id="descargar-meme">
+                <i class="fas fa-download" aria hidden="true"></i> Descargar meme
               </button>
             </main>
 
-            <aside class="panel-oculto" id="panel">
-              <button>
-                <i class="" aria-hidden="true"></i> 
+            <aside class="panel oculto" id="">
+              <button class="panel-cerrar-boton">
+                <i class="fas fa-times" aria-hidden="true"></i> 
               </button>
-              <section class="" id="">
-                <h2>Imagen</h2>
+              <section class="panel-img" id="">
+                <h2 class="panel-titulo">Imagen</h2>
                 <div>
                   <h3>Url</h3>
                   <input>
