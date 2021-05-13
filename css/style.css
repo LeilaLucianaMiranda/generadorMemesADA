@@ -11,10 +11,10 @@ body{
     overflow:hidden;
     height: 100vh;
     margin:0;
-    
+    font-family: 'Open Sans', sans-serif;
 }
 
-.editor-container{
+/*.editor-container{
     --color-header: #191e2b;
     --color-background: #30343f;
     --color-panel: #252935;
@@ -24,7 +24,7 @@ body{
     --font-primary: 'Open Sans', sans-serif;
     --border-radius: 3px;
 }
-
+*/
 .tema{
     background: #000;
 }
@@ -34,13 +34,13 @@ header{
     display:block;
 }
 
-.tittle-generator {
+.tittle-principal{
     text-align:center;
     margin: 10px;
     font-size: 36px;
 }
 
-.panel{
+/*.panel{
     width:260px;
     height:100%;
     flex-direction: column;
@@ -53,4 +53,108 @@ header{
     right:0;
     z-index: 10;
 }
+*/
+.panel-botones{
+    justify-content: center;
+}
 
+.contenedor-boton{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+}
+
+.boton{
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    font-size: 14px;
+}
+
+.boton-icono{
+    margin-right: 5px;
+    display: block;
+}
+/* comenzamos el editor de meme */
+.editor-contenedor{
+    display: flex;
+    flex-grow: 1;
+}
+
+.contenedor-meme{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #30343f;
+    padding: 0 20px 0 20px;
+}
+
+.canvas-meme{
+    width: 100%;
+    max-width: 610px;
+    height: 610px;
+    background-color: black;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.texto-meme{
+    width: 100%;
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 35px 50px 35px 50px;
+    font-size: 40px;
+    font-weight: 800;
+    font-family: Impact;
+    position: static;
+}
+
+.imagen-meme{
+    width: 100%;
+    flex-grow: 1;
+    background-size: cover;
+}
+/* COMENZAMOS EL ASIDE*/
+.panel{
+    width: 260px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #252935;
+    padding: 30px 15px;
+    overflow: auto;
+    position: fixed;
+    margin: 0;
+    box-shadow: -10px 10px 100px 5px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
+/* 
+.oculto{
+    display: none;
+}
+*/
+
+.panel-cerrar-boton{
+    position: fixed;
+    margin: 15px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.panel-titulo{
+    color: white;
+    margin-top: 0;
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+}
